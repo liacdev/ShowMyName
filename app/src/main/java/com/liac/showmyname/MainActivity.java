@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = enterName.getText().toString();
                 if (name.isEmpty())
-                {
-                    nameText.setText("Hello Crunchy!");
+                    {
+                        nameText.setText("Hello Mr. Programmer!");
+                    }
+                    else
+                    {
+                        nameText.setText("Hello from Java! " + name);
+                    }
                 }
-                else
-                {
-                    nameText.setText("Hello from Java! " + name);
-                }
-            }
         });
     }
 }
